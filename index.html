@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GuidePro Tunisie | Conformité Institutionnelle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #020617; /* Midnight */
+      --accent: #b91c1c;  /* Red 700 / Crimson */
+      --slate-soft: #f8fafc;
+      --border-thin: rgba(226, 232, 240, 0.8);
+    }
+    body { 
+      font-family: 'Inter', sans-serif; 
+      -webkit-font-smoothing: antialiased;
+      background-color: #ffffff;
+      color: #0f172a;
+    }
+    h1, h2, h3, h4, .font-display {
+      font-family: 'Outfit', sans-serif;
+    }
+    .glass-header {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px) saturate(180%);
+      border-bottom: 1px solid var(--border-thin);
+    }
+    .btn-executive {
+      background: var(--primary);
+      color: white;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .btn-executive:hover {
+      background: #1e293b;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px -10px rgba(185, 28, 28, 0.2);
+    }
+    .card-pro {
+      background: #ffffff;
+      border: 1px solid var(--border-thin);
+      transition: all 0.3s ease;
+    }
+    .card-pro:hover {
+      border-color: #fca5a5; /* Red 300 */
+      box-shadow: 0 12px 24px -10px rgba(185, 28, 28, 0.05);
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+    .pro-shadow {
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #f1f5f9;
+      border-radius: 10px;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+    "firebase/auth": "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
+    "firebase/": "https://esm.sh/firebase@^12.8.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
